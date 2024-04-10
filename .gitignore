@@ -1,0 +1,20 @@
+.idea/
+.settings
+.classpath
+.project
+*.iws
+*.iml
+*.ipr
+conf
+**/polaris/backup/**
+
+*.DS_Store
+*.log
+log/
+target/
+out/
+gen/
+
+# fcd配置标准化在根目录产出的conf目录
+conf/
+fuapl-app-aggregate-ao-server/velocity.log.1
