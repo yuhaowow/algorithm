@@ -6,6 +6,7 @@ import java.util.Map;
 
 public class ArrayType {
 
+    //2数之和
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>(nums.length);
         int[] res = new int[2];
@@ -22,6 +23,7 @@ public class ArrayType {
         return res;
     }
 
+    //旋转矩阵原地板
     public void rotate(int[][] matrix) {
         int n = matrix.length;
         for (int i = 0; i < n / 2; ++i) {
@@ -35,6 +37,7 @@ public class ArrayType {
         }
     }
 
+    // 旋转矩阵2
     public void rotate2(int[][] matrix) {
         int n = matrix.length;
         // 水平翻转
@@ -55,6 +58,9 @@ public class ArrayType {
         }
     }
 
+    /*
+    打家劫舍
+     */
     public int rob(int[] nums) {
         if (nums == null || nums.length == 0) {
             return 0;
@@ -73,6 +79,9 @@ public class ArrayType {
     }
 
 
+    /*
+    链表排序
+     */
     public ListNode sortList(ListNode head) {
         return sortList(head, null);
     }
@@ -120,7 +129,7 @@ public class ArrayType {
         }
         return dummyHead.next;
     }
-    
+
 
 }
 
