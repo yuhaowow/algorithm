@@ -129,6 +129,28 @@ public class ArrayType {
         }
         return dummyHead.next;
     }
+	
+	
+	    public int MoreThanHalfNum_Solution(int[] numbers) {
+        if (numbers == null || numbers.length <= 0) {
+            return 0;
+        }
+        int res = -1;
+        int cnt = 0;
+        for (int i : numbers) {
+            if (cnt == 0) {
+                res = i;
+                cnt = 1;
+            } else {
+                if (res == i) {
+                    cnt++;
+                } else {
+                    cnt--;
+                }
+            }
+        }
+        return res;
+    }
 
 
 }
